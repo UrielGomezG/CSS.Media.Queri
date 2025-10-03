@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: tomato;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.caja{
+    background: greenyellow;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }   
+}
