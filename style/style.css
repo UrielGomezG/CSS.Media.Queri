@@ -6,7 +6,7 @@ body{
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,3fr);
     gap: 20px;
 }
 
@@ -16,8 +16,17 @@ body{
     border-radius: 10px;
 }
 
-@media(max-width:768px){
+@media(min-width:390px) and (max-width:844px){
     .contenedor{
         grid-template-columns: 1fr;
+        background-color: #333;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
     }   
+}
+
+@media (orientation: landscape) {
+    .caja {
+        background: orange;
+    }
 }
